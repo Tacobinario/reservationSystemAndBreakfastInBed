@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <!-- Encabezado dinámico -->
+    <div class="text-center my-5">
+        <h1 class="display-4">¡Bienvenido al Sistema de Reservaciones y Desayunos a la Cama!</h1>
+        <p class="lead">Reserva espacios y disfruta de desayunos personalizados cada día.</p>
+        <a href="{{ url_for('reservations') }}" class="btn btn-primary btn-lg mt-4">Reservar Ahora</a>
+    </div>
+    <!-- Sección de características -->
+    <div class="row mt-5">
+        <div class="col-md-4 text-center">
+            <i class="bi bi-calendar-fill" style="font-size: 3rem; color: #007bff;"></i>
+            <h3 class="mt-3">Reserva Fácil</h3>
+            <p>Elige tu fecha, hora y sala preferida en cuestión de segundos.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <i class="bi bi-cup-hot-fill" style="font-size: 3rem; color: #007bff;"></i>
+            <h3 class="mt-3">Desayuno Personalizado</h3>
+            <p>Selecciona tu opción favorita y empieza el día con estilo.</p>
+        </div>
+        <div class="col-md-4 text-center">
+            <i class="bi bi-layout-text-sidebar-reverse" style="font-size: 3rem; color: #007bff;"></i>
+            <h3 class="mt-3">Fácil de Gestionar</h3>
+            <p>Consulta y administra tus reservaciones con unos pocos clics.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

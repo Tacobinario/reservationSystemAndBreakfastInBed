@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1 class="text-center mt-4">Realiza tu Reserva</h1>
+    <p class="text-center lead">Elige tu espacio, horario y desayuno favorito.</p>
+
+    <!-- Formulario -->
+    <form method="POST" class="mt-4 shadow-sm p-4 bg-light rounded">
+        {{ form.hidden_tag() }}
+        <div class="mb-3">
+            <label class="form-label">{{ form.name.label }}</label>
+            {{ form.name(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">{{ form.date.label }}</label>
+            {{ form.date(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">{{ form.time.label }}</label>
+            {{ form.time(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">{{ form.room.label }}</label>
+            {{ form.room(class="form-control") }}
+        </div>
+        <div class="mb-3">
+            <label class="form-label">{{ form.breakfast_option.label }}</label>
+            {{ form.breakfast_option(class="form-select") }}
+        </div>
+        <button type="submit" class="btn btn-success btn-lg w-100">Confirmar Reserva</button>
+    </form>
+</div>
+{% endblock %}
