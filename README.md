@@ -76,10 +76,9 @@ Tabla interactiva que muestra todas las reservaciones con opciones de edición y
    ```bash
    git clone https://github.com/TU_USUARIO/reservationSystemAndBreakfastInBed.git
    cd reservationSystemAndBreakfastInBed
-
+   
+Ejecuta en la terminal:
 python -m venv venv
 source venv/bin/activate  # En Windows: venv\Scripts\activate
 pip install -r requirements.txt
-
-
 python main.py
